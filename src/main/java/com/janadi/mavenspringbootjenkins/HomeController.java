@@ -12,4 +12,9 @@ public class HomeController {
     return "Hello World";
   }
 
+  @GetMapping("/hi")
+  public String hi(){
+    return "Hiiiii there";
+  }
+
 }
