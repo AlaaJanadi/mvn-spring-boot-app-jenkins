@@ -26,6 +26,10 @@ pipeline {
                 sh 'mvn verify'
             }
         }
+
+        stage('Static Code Analysis') {
+            build job: 'static-code-analisys'
+        }
     }
 
     post {
