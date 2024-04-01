@@ -28,7 +28,9 @@ pipeline {
         }
 
         stage('Static Code Analysis') {
-            build job: 'static-code-analisys'
+            steps {
+                build job: 'static-code-analisys' 
+            }
         }
     }
 
