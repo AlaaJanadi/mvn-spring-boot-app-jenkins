@@ -13,8 +13,12 @@ public class HomeController {
   }
 
   @GetMapping("/hi")
-  public String hi(){
+  public String hi() {
     return "Hiiiii there";
   }
 
+  @GetMapping("/again")
+  public Double getNumber() {
+    return 3.14;
+  }
 }
